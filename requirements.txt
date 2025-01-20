@@ -1,0 +1,8 @@
+django
+pandas
+numpy
+statsmodels
+requests
+django-extensions
+django-cors-headers
+djangorestframework
