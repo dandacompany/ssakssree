@@ -3,9 +3,9 @@ pandas
 numpy
 statsmodels
 requests
-django-extensions
-django-cors-headers
+# django-extensions
+# django-cors-headers
 djangorestframework
-gunicorn
+# gunicorn
 python-dotenv
 whitenoise
