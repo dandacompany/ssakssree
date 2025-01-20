@@ -7,3 +7,4 @@ django-extensions
 django-cors-headers
 djangorestframework
 gunicorn
+python-dotenv
