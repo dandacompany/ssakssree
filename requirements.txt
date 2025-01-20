@@ -6,3 +6,4 @@ requests
 django-extensions
 django-cors-headers
 djangorestframework
+gunicorn
