@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ssakssree/__init__.py
+ssakssree/recommender.py
+ssakssree.egg-info/PKG-INFO
+ssakssree.egg-info/SOURCES.txt
+ssakssree.egg-info/dependency_links.txt
+ssakssree.egg-info/requires.txt
+ssakssree.egg-info/top_level.txt

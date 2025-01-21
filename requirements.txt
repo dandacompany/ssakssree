@@ -9,3 +9,8 @@ djangorestframework
 # gunicorn
 python-dotenv
 whitenoise
+
+# pypi
+setuptools 
+wheel 
+twine
