@@ -193,6 +193,7 @@ class MixedConjointPriceRecommender:
     def list_feasible_combinations(self, price_min=5000, price_max=30000, step=1000, threshold=4.5):
         """
         모든 범주형 조합에 대해 find_price_range -> feasible한 조합만 리턴
+        반환값: (속성조합, 가격범위, 평균평점) 튜플 리스트
         """
         cat_cols = self.config['categorical_cols']
         
@@ -224,6 +225,9 @@ class MixedConjointPriceRecommender:
                 threshold=threshold
             )
             if prange is not None:
-                feasible_results.append((attr_dict, prange))
+                # 가격 범위의 중간값에서 평점 계산
+                mid_price = (prange[0] + prange[1]) / 2
+                rating = self.predict_mean_rating(mid_price, attr_dict)
+                feasible_results.append((attr_dict, prange, round(rating, 2)))
         
         return feasible_results
